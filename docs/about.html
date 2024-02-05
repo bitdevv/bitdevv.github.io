@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        // Function to generate and display the email address
+        function displayEmail() {
+            // Replace 'user' and 'domain' with your actual email username and domain
+            var username = "TotallySame";
+            var domain = "gmail.com";
+            
+            // Display the email address on the page
+            document.getElementById("protectedEmail").innerHTML = '<a style="color:white" href="mailto:' + username + '@' + domain + '">' + username + '@' + domain + '</a>';
+        }
+    </script>
+    <title>About</title>
+</head>
+
+<body style="height: 100vh;" onload="displayEmail()">
+    <div class="body-container">
+        <div class="container-bg">
+            <div class="card-body">
+                Apps and stuffs
+            </div>
+        </div>
+        <div class="container-bg">
+            <div class="card-body">
+                <a href="." class="nav">Showcase</a>
+                <a href="about.html" class="nav">About</a>
+            </div>
+        </div>
+
+
+        <div class="container-bg">
+            <!--         <ul aria-label="Details">
+                        <li>About</li>
+                        <li>Donate</li>
+                        <li>Contact</li>
+                    </ul> -->
+            <ul aria-label="About">
+                <li onclick="goToInfo(this)">About</li>
+                <li onclick="goToInfo(this)">Contact</li>
+                <li onclick="goToInfo(this)">Donate</li>
+            </ul>
+
+        </div>
+
+        <div class="container-bg p-1">
+            <div class="info">
+                <h2>About</h2>
+                <p>I am a software developer working with Java, Javascript, Typescript, HTML and CSS. Also using angular
+                    and spring boot with some Supabase sprinkeled in.</p>
+                <p>Collection of my side projects. Many of these are in proof of concept or unfinished state. Based on
+                    interest the development might continue for each of the projects mentioned.</p>
+            </div>
+            <div class="info">
+                <h2>Contact</h2>
+                <p>Contact me via Ko-Fi or via e-mail</p>
+                <p >Contact me at: <span id="protectedEmail" ></span></p>
+            </div>
+            <div class="info">
+                <h2>Donate</h2>
+                <p>Use Ko-Fi link to donate if you like my work or contact for other means of supporting</p>
+            </div>
+        </div>
+    </div>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+                <script>
+                    kofiWidgetOverlay.draw('sander420', {
+                        'type': 'floating-chat',
+                        'floating-chat.donateButton.text': 'Support me',
+                        'floating-chat.donateButton.background-color': '#00b9fe',
+                        'floating-chat.donateButton.text-color': '#fff'
+                    });
+                </script>
+</body>
+
+</html>

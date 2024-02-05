@@ -1,46 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>My Landing Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Apps and games</title>
 </head>
+
 <body>
-	<div class="container">
-		<div class="card">
-			<img src="https://via.placeholder.com/150" alt="Card Image">
-			<h2>Clicker3k</h2>
-			<p>Idle game with questionable progress curve.</p>
-			<p>Game is kind of completed but not polished</p>
-			<a href="https://githuubium.github.io/clicer3k/">Learn More</a>
-		</div>
-		<div class="card">
-			<img src="https://via.placeholder.com/150" alt="Card Image">
-			<h2>Rpg thing? (alpha)</h2>
-			<p>Mine resources, transform resources to other stuff in factories, unlock better equipment to be more efficient</p>
-			<p>Playable but lacking depth</p>
-			<a href="https://githuubium.github.io/rpg-thing">Learn More</a>
-		</div>
-		<div class="card">
-			<img src="https://via.placeholder.com/150" alt="Card Image">
-			<h2>Rpg2 (alpha)</h2>
-			<p>Fight monsters to gain exp to fight harder opponents to gain even more exp</p>
-			<p>Content and game logic not finalized nor polished</p>
-			<a href="https://githuubium.github.io/rpg2/">Learn More</a>
-		</div>
-		<div class="card">
-			<img src="https://via.placeholder.com/150" alt="Card Image">
-			<h2>Lottery Simulation</h2>
-			<p>Play Eurojackpot style lottery game simulation</p>
-			<p>Fully completed</p>
-			<a href="https://githuubium.github.io/lotterySim/">Learn More</a>
-		</div>
-		<div class="card">
-			<img src="https://via.placeholder.com/150" alt="Card Image">
-			<h2>untitled_</h2>
-			<p>Something something factory</p>
-			<p>alpha</p>
-			<a href="https://githuubium.github.io/fact-or/">Learn More</a>
-		</div>
-	</div>
+    <div class="body-container">
+
+        <div class="container-bg">
+            <div class="card-body">
+                Apps and stuffs
+            </div>
+        </div>
+        <div class="container-bg">
+            <div class="card-body">
+                <a href="." class="nav">Showcase</a>
+                <a href="about.html" class="nav">About</a>
+            </div>
+        </div>
+
+        <div class="container-bg">
+    <!--         <ul aria-label="Details">
+                <li>About</li>
+                <li>Donate</li>
+                <li>Contact</li>
+            </ul> -->
+            <ul aria-label="Showcase">
+                <li onclick="toggleCardClass(this)">DgScore</li>
+                <li onclick="toggleCardClass(this)">MealPath</li>
+                <li onclick="toggleCardClass(this)">Lottery Sim</li>
+                <li onclick="toggleCardClass(this)">Clicker3k</li>
+                <li onclick="toggleCardClass(this)">RPG Game</li>
+                <li onclick="toggleCardClass(this)">Untitled_</li>
+                <li onclick="toggleCardClass(this)">Rpg2</li>
+            </ul>
+
+        </div>
+        <div class="details container-bg">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/assets/dgscore.jpg" 
+                    onclick="window.open(this.src, '_blank');"
+                    alt=""></div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>DgScore</h3>    
+                    </div>
+                    <div class="card-text">
+                        Simple disc golf score keeping app. Requires registration and features cloud save.
+                    </div>
+                    <a href="https://dgscorev2.netlify.app/" 
+                    target="_blank" class="button-link">Link to item</a>
+                    <!-- <div class="card-footer"> -->
+
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-image"><img src="/assets/mealpath.jpg" 
+                    onclick="window.open(this.src, '_blank');"
+                    alt=""></div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>MealPath</h3>
+                    </div>
+                    <div class="card-text">
+                        Web app for managing recipes and meal plans. Requires registration.
+                    </div>
+                    <a href="https://mealpath.netlify.app/" 
+                    target="_blank"
+                    class="button-link">Link to item</a>
+                    <!-- <div class="card-footer"> -->
+
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-image"><img src="/assets/lotterysim.jpg" 
+                    onclick="window.open(this.src, '_blank');"
+                    alt=""></div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>
+
+                            Lottery Sim
+                        </h3>
+                    </div>
+                    <div class="card-text">
+                        Eurojackpot simulator. Play once or play million times. Keeps track of wins and losses.
+                    </div>
+                    <a href="https://githuubium.github.io/lotterySim/" 
+                    target="_blank"
+                    class="button-link">Link to item</a>
+                    <!-- <div class="card-footer"> -->
+
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-image"><img src="assets/clicker3k.jpg" alt=""></div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>
+                            Clicker3k
+                        </h3>
+                    </div>
+                    <div class="card-text">
+                        Idle game with some content. Progression curve not very polished.
+                    </div>
+                    <a href="https://githuubium.github.io/clicer3k/"
+                    target="_blank"
+                    class="button-link">Link to item</a>
+                    <!-- <div class="card-footer"> -->
+
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-image"><img src="assets/rpggame.jpg" alt=""></div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Rpg Game</h3>
+                    </div>
+                    <div class="card-text">
+                        Factory themed game with research and idle components. Not finished
+                    </div>
+                    <a href="https://githuubium.github.io/rpg-thing" 
+                    target="_blank"
+                    class="button-link">Link to item</a>
+                    <!-- <div class="card-footer"> -->
+
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-image"><img src="assets/untitled.jpg" alt=""></div>
+                <div class="card-body">
+
+                    <div class="card-title">
+                        <h3>Untitled_</h3>
+                    </div>
+                    <div class="card-text">
+                        Factory game with UI. More proof of concept than game at this point.
+                    </div>
+                    <a href="https://githuubium.github.io/fact-or/" 
+                    target="_blank"
+                    class="button-link">Link to item</a>
+                    <!-- <div class="card-footer"> -->
+
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-image"><img src="assets/rpg2.jpg" alt=""></div>
+                <div class="card-body">
+
+                    <div class="card-title">
+                        <h3>Rpg2</h3>
+                    </div>
+                    <div class="card-text">
+                        Proof of concept for rpg game.
+                    </div>
+                    <a href="https://githuubium.github.io/rpg2" 
+                    target="_blank"
+                    class="button-link">Link to item</a>
+                    <!-- <div class="card-footer"> -->
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+                <script>
+                    kofiWidgetOverlay.draw('sander420', {
+                        'type': 'floating-chat',
+                        'floating-chat.donateButton.text': 'Support me',
+                        'floating-chat.donateButton.background-color': '#00b9fe',
+                        'floating-chat.donateButton.text-color': '#fff'
+                    });
+                </script>
 </body>
+
 </html>
