@@ -30,6 +30,7 @@
 .card{
     width: 14rem;
     margin:auto;
+    margin-bottom: 1rem;
     background-color: var(--card-background);
     border-radius: 8px;
     overflow: hidden;
@@ -159,4 +160,8 @@ li:hover {
     color: var(--text-color);
     text-decoration: none;
     margin-right: 2rem;
+}
+
+.info{
+    margin-bottom: 2.5rem;
 }
